@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Employees>
+    <Employee>
+        <FirstName>John</FirstName>
+        <LastName>Doe</LastName>
+        <Division>Information Technology</Division>
+        <Building>Tech Tower</Building>
+        <Title>Senior Software Engineer</Title>
+        <Room>T-501</Room>
+    </Employee>
+    <Employee>
+        <FirstName>Jane</FirstName>
+        <LastName>Smith</LastName>
+        <Division>Human Resources</Division>
+        <Building>Main Building</Building>
+        <Title>HR Manager</Title>
+        <Room>M-302</Room>
+    </Employee>
+    <Employee>
+        <FirstName>Michael</FirstName>
+        <LastName>Johnson</LastName>
+        <Division>Finance</Division>
+        <Building>Finance Center</Building>
+        <Title>Financial Analyst</Title>
+        <Room>F-201</Room>
+    </Employee>
+    <Employee>
+        <FirstName>Sarah</FirstName>
+        <LastName>Williams</LastName>
+        <Division>Marketing</Division>
+        <Building>Creative Hub</Building>
+        <Title>Marketing Director</Title>
+        <Room>C-401</Room>
+    </Employee>
+    <Employee>
+        <FirstName>Robert</FirstName>
+        <LastName>Brown</LastName>
+        <Division>Operations</Division>
+        <Building>Operations Center</Building>
+        <Title>Operations Manager</Title>
+        <Room>O-101</Room>
+    </Employee>
+    <Employee>
+        <FirstName>Emily</FirstName>
+        <LastName>Davis</LastName>
+        <Division>Research</Division>
+        <Building>Research Lab</Building>
+        <Title>Research Scientist</Title>
+        <Room>R-301</Room>
+    </Employee>
+    <Employee>
+        <FirstName>David</FirstName>
+        <LastName>Miller</LastName>
+        <Division>Sales</Division>
+        <Building>Sales Center</Building>
+        <Title>Sales Director</Title>
+        <Room>S-401</Room>
+    </Employee>
+    <Employee>
+        <FirstName>Lisa</FirstName>
+        <LastName>Wilson</LastName>
+        <Division>Customer Support</Division>
+        <Building>Support Center</Building>
+        <Title>Support Team Lead</Title>
+        <Room>CS-201</Room>
+    </Employee>
+    <Employee>
+        <FirstName>James</FirstName>
+        <LastName>Taylor</LastName>
+        <Division>Quality Assurance</Division>
+        <Building>Tech Tower</Building>
+        <Title>QA Engineer</Title>
+        <Room>T-302</Room>
+    </Employee>
+    <Employee>
+        <FirstName>Amanda</FirstName>
+        <LastName>Anderson</LastName>
+        <Division>Product Management</Division>
+        <Building>Main Building</Building>
+        <Title>Product Manager</Title>
+        <Room>M-401</Room>
+    </Employee>
+</Employees>
