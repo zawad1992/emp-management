@@ -1,0 +1,44 @@
+﻿@model HRMWeb.Models.Employee
+
+@{
+    ViewData["Title"] = "Delete Employee";
+}
+
+<div class="container">
+    <h1>Delete Employee</h1>
+
+    <div class="alert alert-danger">
+        <h4>Are you sure you want to delete this employee?</h4>
+    </div>
+
+    <div class="card">
+        <div class="card-body">
+            <dl class="row">
+                <dt class="col-sm-3">@Html.DisplayNameFor(model => model.FirstName)</dt>
+                <dd class="col-sm-9">@Html.DisplayFor(model => model.FirstName)</dd>
+
+                <dt class="col-sm-3">@Html.DisplayNameFor(model => model.LastName)</dt>
+                <dd class="col-sm-9">@Html.DisplayFor(model => model.LastName)</dd>
+
+                <dt class="col-sm-3">@Html.DisplayNameFor(model => model.Division)</dt>
+                <dd class="col-sm-9">@Html.DisplayFor(model => model.Division)</dd>
+
+                <dt class="col-sm-3">@Html.DisplayNameFor(model => model.Building)</dt>
+                <dd class="col-sm-9">@Html.DisplayFor(model => model.Building)</dd>
+
+                <dt class="col-sm-3">@Html.DisplayNameFor(model => model.Title)</dt>
+                <dd class="col-sm-9">@Html.DisplayFor(model => model.Title)</dd>
+
+                <dt class="col-sm-3">@Html.DisplayNameFor(model => model.Room)</dt>
+                <dd class="col-sm-9">@Html.DisplayFor(model => model.Room)</dd>
+            </dl>
+        </div>
+        <div class="card-footer">
+            <form asp-action="Delete">
+                <input type="hidden" asp-for="EmployeeId" />
+                <input type="submit" value="Delete" class="btn btn-danger" />
+                <a asp-action="Index" class="btn btn-secondary">Back to List</a>
+            </form>
+        </div>
+    </div>
+</div>
