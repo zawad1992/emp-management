@@ -7,7 +7,6 @@ A modern HR Management System built with ASP.NET Core 8.0 MVC, featuring employe
 - 👥 Complete Employee Management (CRUD operations)
 - 📊 Responsive data display using Bootstrap
 - 📱 Mobile-friendly interface
-- 🔍 Search functionality
 - 📤 XML data import capability
 - 🔐 Input validation
 - 🎯 Clean Architecture
