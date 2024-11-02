@@ -1,0 +1,46 @@
+services:
+  db:
+    container_name: hrmweb-db
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    ports:
+      - "1433:1433"
+    environment:
+      - ACCEPT_EULA=Y
+      - SA_PASSWORD=YourStrong@Passw0rd
+      - MSSQL_PID=Express
+    healthcheck:
+      test: /opt/mssql-tools/bin/sqlcmd -S localhost -U sa -P "YourStrong@Passw0rd" -Q "SELECT 1" || exit 1
+      interval: 20s
+      timeout: 10s
+      retries: 10
+      start_period: 60s
+    volumes:
+      - sqldata:/var/opt/mssql
+    networks:
+      - hrmweb-network
+    restart: unless-stopped
+    
+  webapp:
+    container_name: hrmweb-webapp
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8080:80"
+    depends_on:
+      - db    # Changed from condition-based dependency to simple dependency
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Docker
+      - ConnectionStrings__DefaultConnection=Server=db;Database=HRMWeb;User=sa;Password=YourStrong@Passw0rd;TrustServerCertificate=True;MultipleActiveResultSets=true;ConnectRetryCount=5;ConnectRetryInterval=10
+    networks:
+      - hrmweb-network
+    restart: unless-stopped
+
+volumes:
+  sqldata:
+    name: hrmweb_sqldata
+
+networks:
+  hrmweb-network:
+    name: hrmweb_network
+    driver: bridge
