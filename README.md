@@ -52,7 +52,7 @@ HRMWeb/
 1. Clone the repository
 ```bash
 git clone https://github.com/zawad1992/emp-management.git
-cd HRMWeb
+cd emp-management
 ```
 
 2. Install the Entity Framework Core tools globally
